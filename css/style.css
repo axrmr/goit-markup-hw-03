@@ -48,6 +48,10 @@ body {
 
 /* Studio page */
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Logo accent*/
 .logo-accent {
   color: var(--accentColor);

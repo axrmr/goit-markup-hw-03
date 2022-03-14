@@ -17,6 +17,9 @@ body {
   margin: 0;
   padding: 0;
 }
+* img {
+  display: block;
+}
 
 .section {
   padding-top: 94px;
@@ -48,16 +51,12 @@ body {
 
 /* Studio page */
 
+/* Header */
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 
-/* Logo accent*/
-.logo-accent {
-  color: var(--accentColor);
-}
-
-/* Header */
 .logo {
   margin-right: 93px;
 
@@ -67,6 +66,10 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+}
+
+.logo-accent {
+  color: var(--accentColor);
 }
 
 /* Navigaton */
@@ -91,6 +94,10 @@ body {
 }
 
 .nav-links {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   color: var(--primaryTextColor);
   font-size: 14px;
@@ -104,6 +111,10 @@ body {
 }
 
 .nav-contacts {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   color: var(--secondaryTextColor);
   font-size: 14px;
@@ -114,7 +125,10 @@ body {
 
 /* Main */
 
-.hero {
+.hero-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
   background-color: #2f303a;
 }
@@ -129,8 +143,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
-.hero-link {
-  display: inline-block;
+.hero-button {
+  border-color: transparent;
   border-radius: 4px;
   min-width: 200px;
   padding-left: 32px;
@@ -147,6 +161,10 @@ body {
 }
 
 /* Features */
+
+.features-section {
+  padding-top: 94px;
+}
 
 .features-list {
   display: flex;
@@ -236,10 +254,6 @@ body {
   margin-right: 0;
 }
 
-.team-img {
-  margin-bottom: 30px;
-}
-
 .team-nams {
   margin-top: 0;
   margin-bottom: 10px;
@@ -255,6 +269,16 @@ body {
   text-align: center;
   color: var(--secondaryTextColor);
   line-height: 1.19;
+}
+
+.team-div {
+  padding-top: 30px;
+  padding-right: 59px;
+  padding-bottom: 30px;
+  padding-left: 59px;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white);
 }
 
 /* Footer */
@@ -331,7 +355,6 @@ body {
 
 .app-lib-item {
   margin-bottom: 30px;
-  border-bottom: 1px solid #ececec;
 }
 
 .app-lib-item:nth-last-child(-n + 3) {
@@ -348,10 +371,6 @@ body {
   text-decoration: none;
 }
 
-.app-lib-img {
-  margin-bottom: 20px;
-}
-
 .app-title {
   margin-top: 0;
   margin-bottom: 4px;
@@ -361,10 +380,22 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .app-text {
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 
   line-height: 1.88;
   color: var(--secondaryTextColor);
+}
+.app-div {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--white);
 }
